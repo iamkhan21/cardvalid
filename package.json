@@ -41,10 +41,13 @@
     "test": "vitest run",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "format": "prettier --write ./src",
-    "check-format": "prettier --check ./src"
+    "check-format": "prettier --check ./src",
+    "locale-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.16.4",
+    "@changesets/cli": "2.27.9",
     "npm-run-all": "4.1.5",
     "prettier": "3.3.3",
     "typescript": "5.6.3",
