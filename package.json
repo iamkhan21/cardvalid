@@ -1,0 +1,53 @@
+{
+  "name": "cardvalid",
+  "version": "1.0.0",
+  "description": "Library for validating credit card numbers",
+  "keywords": [
+    "credit",
+    "card",
+    "validation",
+    "validator",
+    "validate",
+    "cardvalid",
+    "creditcard",
+    "cc",
+    "number",
+    "cvv",
+    "cvc"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/iamkhan21/cardvalid",
+  "bugs": {
+    "url": "https://github.com/iamkhan21/cardvalid/issues"
+  },
+  "author": {
+    "name": "Ivan Khanevich",
+    "email": "help@iamkhan.tech",
+    "url": "https://iamkhan.tech"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamkhan21/cardvalid.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vitest",
+    "build": "tsc --project tsconfig.build.json",
+    "ci": "npm-run-all check-format test build check-exports",
+    "test": "vitest run",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "format": "prettier --write ./src",
+    "check-format": "prettier --check ./src"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.16.4",
+    "npm-run-all": "4.1.5",
+    "prettier": "3.3.3",
+    "typescript": "5.6.3",
+    "vitest": "2.1.2"
+  }
+}
