@@ -1,5 +1,5 @@
 {
-  "name": "cardvalid",
+  "name": "@iamkhan21/cardvalid",
   "version": "1.0.1",
   "description": "Library for validating credit card numbers",
   "keywords": [
