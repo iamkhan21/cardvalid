@@ -1,5 +1,0 @@
----
-"cardvalid": patch
----
-
-Initial release
